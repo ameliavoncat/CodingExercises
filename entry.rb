@@ -1,12 +1,19 @@
 require 'colorize'
 
-puts('Enter'.green + ' NODE'.red + ' or '.green + 'RUBY'.red + '.'.green)
-input = gets.upcase.sub(/\n/, '')
+def languagePrompt
+  puts('Enter'.green + ' NODE'.red + ' or '.green + 'RUBY'.red + '.'.green)
+  input = gets.upcase.sub(/\n/, '')
 
-if(input === 'NODE')
-  exec 'node', './node/node-menu.js'
+  if (input === 'NODE')
+    exec 'node', './node/node-menu.js'
+  elsif (input === 'RUBY')
+    exec 'ruby', './ruby/ruby-menu.rb'
+  elsif (input === '/Q')
+    puts('Exiting Language Menu.'.red)
+    return
+  else
+    languagePrompt
+  end
 end
 
-if(input === 'RUBY')
-  exec 'ruby', './ruby/ruby-menu.rb'
-end
+languagePrompt
