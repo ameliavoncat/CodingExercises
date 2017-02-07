@@ -1,4 +1,5 @@
 require 'colorize'
+exitPrompt = require_relative('../helpers/exitPrompt')
 quitToMenu = require_relative('../helpers/quitToMenu')
 
 @computerNumber
@@ -13,7 +14,7 @@ def promptForInput
 
   if (@input.to_i == @computerNumber)
     puts("You got the right number!".green)
-    exec 'ruby', 'ruby/ruby-menu.rb'
+    exitPrompt
   else
     puts("Guess again!".green)
     promptForInput

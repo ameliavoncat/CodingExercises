@@ -17,12 +17,13 @@ def menuPrompt
 end
 
 def getInput
-  input = gets
-  if (input.sub(/\n/, '').downcase === '/q')
+  input = gets.sub(/\n/, '')
+  p(input, @menuOptions[input.to_sym])
+  if (input.downcase === '/q')
     puts('Exiting Ruby Coding Exercises Menu.'.red)
     return
-  elsif (input.to_i === 1)
-    exec 'ruby', 'ruby/exercises/guess-the-number.rb'
+  elsif (@menuOptions[input.to_sym] != nil)
+    exec 'ruby', @menuOptions[input.to_sym][:path]
   else
     puts('Invalid entry.'.red)
     getInput
