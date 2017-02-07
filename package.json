@@ -1,0 +1,22 @@
+{
+  "name": "coding-exercises",
+  "version": "1.0.0",
+  "description": "Benchmark goals are projects that are designed to be done solo.",
+  "main": "node-menu.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ameliavoncat/CodingExercises.git"
+  },
+  "author": "Amelia Clarke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ameliavoncat/CodingExercises/issues"
+  },
+  "homepage": "https://github.com/ameliavoncat/CodingExercises#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
