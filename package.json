@@ -2,9 +2,10 @@
   "name": "coding-exercises",
   "version": "1.0.0",
   "description": "Benchmark goals are projects that are designed to be done solo.",
-  "main": "node-menu.js",
+  "main": "entry.rb",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "ruby entry.rb"
   },
   "repository": {
     "type": "git",

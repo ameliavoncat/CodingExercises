@@ -1,6 +1,6 @@
 const colors = require('colors')
-const quitCommand = require('./node/helpers/quitCommand')
-const menuOptions = require('./node/constants/menuOptions')
+const quitCommand = require('./helpers/quitCommand')
+const menuOptions = require('./constants/menuOptions')
 const optionKeys = Object.keys(menuOptions)
 
 function printMenu(){
@@ -16,10 +16,6 @@ function printMenu(){
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'.magenta)
   console.log("Enter the number of the program to run or /q to quit.".magenta)
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'.magenta)
-}
-
-function waitForEnter(){
-
 }
 
 printMenu()
