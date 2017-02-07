@@ -73,5 +73,5 @@ process.stdin.on('data', function(input){
 })
 
 process.on('exit', function(code){
-  console.log('Exiting Menu.'.magenta)
+  console.log('Exiting Node Coding Exercises Menu.'.red)
 })

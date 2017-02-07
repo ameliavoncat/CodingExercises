@@ -18,6 +18,7 @@ end
 def getInput
   input = gets
   if (input.sub(/\n/, '').downcase === '/q')
+    puts('Exiting Ruby Coding Exercises Menu.'.red)
     return
   elsif (input.to_i === 1)
     exec 'ruby', 'ruby/exercises/guess-the-number.rb'
