@@ -1,5 +1,5 @@
 const colors = require('colors')
-const quitCommand = require('./helpers/quitCommand')
+const quitCommand = require('../helpers/quitCommand')
 let computerNumber;
 
 function generateNumber(){
