@@ -18,7 +18,6 @@ end
 
 def getInput
   input = gets.sub(/\n/, '')
-  p(input, @menuOptions[input.to_sym])
   if (input.downcase === '/q')
     puts('Exiting Ruby Coding Exercises Menu.'.red)
     return
