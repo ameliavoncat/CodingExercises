@@ -1,4 +1,5 @@
 require 'colorize'
+require_relative('./constants/menuOptions')
 
 def menuPrompt
   puts('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'.magenta)
@@ -6,7 +7,7 @@ def menuPrompt
   puts('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'.magenta)
 
   puts('Menu:'.green)
-  puts('1: Guess The Number'.green)
+  @menuOptions.each_key { |key| puts(key.to_s.green + ': '.green + @menuOptions[key][:name].green) }
 
   puts('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'.magenta)
   puts('Enter the number of the program to run or /q to quit.'.magenta)
