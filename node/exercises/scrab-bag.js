@@ -1,6 +1,6 @@
 const colors = require('colors')
-const quitCommand = require('./helpers/quitCommand')
-const scrabbleLetters = require('./constants/scrabbleLetters')
+const quitCommand = require('../helpers/quitCommand')
+const scrabbleLetters = require('../constants/scrabbleLetters')
 
 const letters = Object.keys(scrabbleLetters)
 let scrabBag = Object.assign(scrabbleLetters)

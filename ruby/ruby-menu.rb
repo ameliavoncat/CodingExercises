@@ -12,7 +12,7 @@ def menuPrompt
 
   input = gets.to_i
   if(input === 1)
-    exec 'ruby', 'ruby/guess-the-number.rb'
+    exec 'ruby', 'ruby/exercises/guess-the-number.rb'
   end
 end
 

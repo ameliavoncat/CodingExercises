@@ -8,6 +8,7 @@ def promptForInput
   @input = gets.to_i
   if (@input == @computerNumber)
     puts("You got the right number!")
+    exec 'ruby', 'ruby/ruby-menu.rb'
   else
     puts("Guess again!")
     promptForInput
