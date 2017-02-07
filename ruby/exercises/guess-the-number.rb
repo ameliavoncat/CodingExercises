@@ -1,4 +1,5 @@
 require 'colorize'
+quitToMenu = require_relative('../helpers/quitToMenu')
 
 @computerNumber
 
@@ -7,8 +8,10 @@ def generateNumber
 end
 
 def promptForInput
-  @input = gets.to_i
-  if (@input == @computerNumber)
+  @input = gets.sub(/\n/, '')
+  quitToMenu(@input)
+
+  if (@input.to_i == @computerNumber)
     puts("You got the right number!".green)
     exec 'ruby', 'ruby/ruby-menu.rb'
   else
