@@ -23,6 +23,7 @@ end
 
 puts('Enter a number to find its factorial.'.green)
 input = gets.chomp
+
 quitToMenu(input)
 
 findNearestFactorial(input.to_i)
