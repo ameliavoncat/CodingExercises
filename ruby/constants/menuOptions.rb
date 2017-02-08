@@ -5,5 +5,6 @@
   :'4' => {path: './ruby/exercises/fibonacci-bases.rb', name: 'Fibonnacci Bases'},
   :'5' => {path: './ruby/exercises/the-disemvowling.rb', name: 'The Disemvowling'},
   :'6' => {path: './ruby/exercises/where-json.rb', name: 'Where In The JSON?'},
-  :'7' => {path: './ruby/exercises/who-wants-a-date.rb', name: 'Who Wants A Date?'}
+  :'7' => {path: './ruby/exercises/who-wants-a-date.rb', name: 'Who Wants A Date?'},
+  :'8' => {path: './ruby/exercises/parens-be-gone.rb', name: 'Parens Be Gone'}
 }
