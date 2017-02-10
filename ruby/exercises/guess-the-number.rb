@@ -13,7 +13,7 @@ def promptForInput
   quitToMenu(@input)
 
   if (@input.to_i == @computerNumber)
-    puts("You got the right number!".green)
+    puts("You got the right number!".yellow)
     exitPrompt
   else
     puts("Guess again!".green)
