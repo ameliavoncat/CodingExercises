@@ -9,15 +9,17 @@ end
 puts('Enter a string.'.green)
 string = gets
 quitToMenu(string)
-string = string.gsub!(/\n/, '').gsub!(/[^a-zA-Z]/, ' ').split(' ')
+string.gsub!(/\n/, '').gsub!(/[^a-zA-Z]/, ' ')
+string = string.split(' ')
 
-index = gets
+puts('Enter the non-zero index of the word to find.'.green)
+index = gets.chomp
 quitToMenu(index)
 
 if(index.to_i <= 0 || index.to_i > string.length)
-  puts("''".green)
+  puts("Result: ".green + "''".yellow)
   displayExitPrompt
 else
-  puts(string[index.to_i - 1].green)
+  puts("Result: ".green + string[index.to_i - 1].yellow)
   displayExitPrompt
 end
