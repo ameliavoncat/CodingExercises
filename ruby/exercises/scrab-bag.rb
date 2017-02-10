@@ -34,6 +34,6 @@ input.each {|letter| reduceLetterCount(letter) }
 
 letters.each { |letter| getRemainingLetters(letter) }
 puts('Letters remaining in the bag:'.green)
-@remainingLetters.keys.each {|key| puts(key.to_s.green + ': '.green + @remainingLetters[key].join(', ').green)}
+@remainingLetters.keys.sort.each {|key| puts(key.to_s.green + ': '.green + @remainingLetters[key].join(', ').yellow)}
 
 displayExitPrompt
