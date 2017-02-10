@@ -9,5 +9,6 @@
   :'8' => {path: './ruby/exercises/parens-be-gone.rb', name: 'Parens Be Gone'},
   :'9' => {path: './ruby/exercises/lairotcaf.rb', name: 'Lairotcaf'},
   :'10' => {path: './ruby/exercises/finite-state-gate.rb', name: 'Finite State Gate'},
-  :'11' => {path: './ruby/exercises/string-permutations.rb', name: 'String Permutations'}
+  :'11' => {path: './ruby/exercises/string-permutations.rb', name: 'String Permutations'},
+  :'12' => {path: './ruby/exercises/braille.rb', name: 'Braille'}
 }
