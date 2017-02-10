@@ -22,6 +22,8 @@ def getInput
     puts('Exiting Ruby Coding Exercises Menu.'.red)
     return
   elsif (@menuOptions[input.to_sym] != nil)
+    puts('Starting '.magenta + @menuOptions[input.to_sym][:name].magenta + '.'.magenta)
+    puts('Enter /q to return to the menu.'.magenta)
     exec 'ruby', @menuOptions[input.to_sym][:path]
   else
     puts('Invalid entry.'.red)
